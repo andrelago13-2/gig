@@ -1,8 +1,115 @@
 <!DOCTYPE html>
+<style>
+    html {
+        height: 100%;
+        width: 100%;
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .bodyContainer {
+        /* background-color: #242424;/ */
+        background-image: radial-gradient(black, #0f0f0f);
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title,
+    .subtitle,
+    .contacts,
+    .infoText {
+        color: #804003;
+        display: block;
+    }
+
+    .title {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-weight: bold;
+        font-size: 400% !important;
+        text-shadow: 0px 0px 2px gray;
+    }
+
+    .subtitle {
+        font-size: 180%;
+        text-shadow: 0px 0px 2px gray;
+    }
+
+    .infoText {
+        color: gray;
+        font-size: 200%;
+    }
+
+    .subtitle,
+    .contacts,
+    .infoText {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+
+    .title,
+    .contacts,
+    .infoText {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contacts,
+    .infoText {
+        margin-top: 40px;
+    }
+
+    .contacts {
+        color: #666666;
+        font-size: 160%;
+    }
+
+    .contacts a {
+        color: #9c9b9b;
+        text-decoration: none;
+    }
+
+    .contacts a:hover {
+        color: #a3a3a3;
+    }
+
+    .blink_me {
+        animation: blinker 2s linear infinite;
+    }
+
+    @keyframes blinker {
+        50% {
+            opacity: 0.6;
+        }
+    }
+</style>
 <html>
+
 <body>
-
-<p>Gig</p>
-
+    <div class="bodyContainer">
+        <div class="contentContainer">
+            <div class="title blink_me">
+                Gig
+            </div>
+            <div class="subtitle">
+                Revolutionizing the world of music.
+            </div>
+            <div class="infoText">
+                New content here soon!
+            </div>
+            <div class="contacts">
+                Contact us: <a href="mailto:gig.app.inbox@gmail.com">gig.app.inbox@gmail.com</a>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
