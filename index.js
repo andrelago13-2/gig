@@ -4,7 +4,6 @@ function init() {
         $('#subscribeform').hide();
         $('#subscribedNotice').show();
     }
-    console.log("hey there");
 }
 
 function subscribeFormClick() {

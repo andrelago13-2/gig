@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html class="root">
 
+<html>
 <head>
     <title>Gig</title>
     <link rel="shortcut icon" type="image/png" href="./images/favicon.jpg" />
     <link rel="stylesheet" href="index.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5P100H2KGF"></script>
     <script>
@@ -18,35 +20,56 @@
     </script>
 </head>
 
-<body onload="init()">
-    <div class="bodyContainer">
-        <div class="contentContainer">
-            <div class="title blink_me">
-                Gig
+<body class="Root" onload="init()">
+    <div class="BodyContainer">
+        <h1 class="Title">
+            Gig
+        </h1>
+        <h2 class="Subtitle">
+            Chegou a revolução no acesso a serviços profissionais!
+        </h2>
+        <div class="InfoText">
+            <p>
+                Com a Gig podes aceder mais facilmente a todo o tipo de prestadores de serviços, fazer marcações e
+                efetuar pagamentos, tudo num só sítio! Suportamos os seguintes serviços:
+            </p>
+        </div>
+        <table class="ExamplesTable">
+            <tr>
+                <td class="TableCell">Limpezas</td>
+                <td class="TableCell">Explicações</td>
+                <td class="TableCell">Reparações</td>
+                <td class="TableCell">Personal Trainers</td>
+            </tr>
+            <tr>
+                <td class="TableCell">Mind Coaches</td>
+                <td class="TableCell">Yoga</td>
+                <td class="TableCell">Animação de eventos</td>
+                <td class="TableCell">Logística</td>
+            </tr>
+            <tr>
+                <td class="TableCell">Apoio a clientes</td>
+                <td class="TableCell">Motoristas</td>
+                <td class="TableCell">Construção</td>
+                <td class="TableCell">... entre outros!</td>
+            </tr>
+        </table>
+        <div class="Contacts">
+            Para mais informações, envie-nos um <a href="mailto:gig.app.inbox@gmail.com">email</a>!
+        </div>
+        <form id="subscribeform" name="subscribeform" action="JavaScript:subscribeFormClick()" class="SubscribeForm">
+            <div>
+                <h2>Está a par das novidades!</h2>
+                <p>Subscreve e fica entre os primeiros a saber das novidades que estamos a preparar para fazer os
+                    teus dias melhores :) </p>
             </div>
-            <div class="subtitle">
-                Revolutionizing the world of music.
+            <div>
+                <input type="email" placeholder="Email" name="mail" required>
+                <input type="submit" value="Aderir">
             </div>
-            <div class="infoText">
-                We're changing the way you interact with music. Stay tuned for updates!
-            </div>
-            <div class="contacts">
-                For any enquires, please <a href="mailto:gig.app.inbox@gmail.com">email us</a>!
-            </div>
-
-            <form id="subscribeform" name="subscribeform" action="JavaScript:subscribeFormClick()" class="subscribeForm">
-                <div>
-                    <h2>Está a par das novidades!</h2>
-                    <p>Subscreve e fica entre os primeiros a saber das novidades que estamos a preparar para fazer os teus dias melhores :) </p>
-                </div>
-                <div>
-                    <input type="email" placeholder="Email" name="mail" required>
-                    <input type="submit" value="Aderir">
-                </div>
-            </form>
-            <div id="subscribedNotice" class="subscribedNotice">
-                <h2>Obrigado por subscreveres! Fica atento às novidades solvimenti :)</h2>
-            </div>
+        </form>
+        <div id="subscribedNotice" class="SubscribedNotice">
+            <h2>Obrigado por subscreveres! Fica atento às novidades solvimenti :)</h2>
         </div>
     </div>
 </body>

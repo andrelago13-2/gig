@@ -1,110 +1,51 @@
-html {
-    height: 100%;
-    width: 100%;
-}
-
+html,
 body {
     height: 100%;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    color: grey;
 }
 
-.bodyContainer {
-    /* background-color: #242424;/ */
-    background-image: radial-gradient(black, #0f0f0f);
+.Root {
+    background-image: radial-gradient(#005aff, #377eff);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
     height: 100%;
-    width: 100%;
-    margin: 0;
+    margin: auto;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 80%;
 }
 
-.title,
-.subtitle,
-.contacts,
-.infoText {
-    color: #cc6504;
-    display: block;
-}
-
-.title {
-    font-weight: bold;
-    font-size: 400% !important;
-    text-shadow: 0px 0px 2px gray;
-}
-
-.subtitle {
-    font-size: 180%;
-    text-align: center;
-    text-shadow: 0px 0px 2px gray;
-}
-
-.infoText {
-    color: gray;
-    font-size: 200%;
-    max-width: 40rem;
-}
-
-.subtitle,
-.contacts,
-.infoText {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
-.title,
-.contacts,
-.infoText {
-    width: 100%;
-    text-align: center;
-}
-
-.contacts,
-.infoText {
-    margin-top: 40px;
-}
-
-.contacts {
-    color: #666666;
-    font-size: 160%;
-}
-
-.contacts a {
-    color: #9c9b9b;
-    text-decoration: none;
-}
-
-.contacts a:hover {
-    color: #a3a3a3;
-}
-
-.blink_me {
-    animation: blinker 2s linear infinite;
-}
-
-@keyframes blinker {
-    50% {
-        opacity: 0.6;
+@media (max-width: 600px) {
+    .Root {
+      margin: 0 !important;
+      width: 95% !important;
     }
-}
+  }
 
-.subscribeForm {
-    color: gray;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+.BodyContainer {
     align-items: center;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    max-width: 40rem;
+    height: 100%;
+    justify-content: center;
 }
 
-.subscribedNotice {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    color: gray;
+.InfoText {
+    max-width: 70%;
+}
+
+.TableCell {
+    text-align: center;
+}
+
+.SubscribeForm {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    text-align: center;
+}
+
+.SubscribedNotice {
     display: none;
     max-width: 40rem;
 }
