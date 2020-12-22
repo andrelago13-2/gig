@@ -1,103 +1,20 @@
 <!DOCTYPE html>
+<html class="root">
+
 <head>
-  <title>The Gig App</title>
-  <link rel="shortcut icon" type="image/png" href="http://www.mmryan.net/img/favicon/G_Letter-G-icon.png"/>
+    <title>The Gig App</title>
+    <link rel="shortcut icon" type="image/png" href="http://www.mmryan.net/img/favicon/G_Letter-G-icon.png" />
+    <link rel="stylesheet" href="index.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5P100H2KGF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5P100H2KGF');
+    </script>
 </head>
-<style>
-    html {
-        height: 100%;
-        width: 100%;
-    }
-
-    body {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .bodyContainer {
-        /* background-color: #242424;/ */
-        background-image: radial-gradient(black, #0f0f0f);
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .title,
-    .subtitle,
-    .contacts,
-    .infoText {
-        color: #cc6504;
-        display: block;
-    }
-
-    .title {
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-        font-weight: bold;
-        font-size: 400% !important;
-        text-shadow: 0px 0px 2px gray;
-    }
-
-    .subtitle {
-        font-size: 180%;
-        text-align: center;
-        text-shadow: 0px 0px 2px gray;
-    }
-
-    .infoText {
-        color: gray;
-        font-size: 200%;
-        max-width: 40rem;
-    }
-
-    .subtitle,
-    .contacts,
-    .infoText {
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    }
-
-    .title,
-    .contacts,
-    .infoText {
-        width: 100%;
-        text-align: center;
-    }
-
-    .contacts,
-    .infoText {
-        margin-top: 40px;
-    }
-
-    .contacts {
-        color: #666666;
-        font-size: 160%;
-    }
-
-    .contacts a {
-        color: #9c9b9b;
-        text-decoration: none;
-    }
-
-    .contacts a:hover {
-        color: #a3a3a3;
-    }
-
-    .blink_me {
-        animation: blinker 2s linear infinite;
-    }
-
-    @keyframes blinker {
-        50% {
-            opacity: 0.6;
-        }
-    }
-</style>
-<html>
 
 <body>
     <div class="bodyContainer">
