@@ -8,6 +8,8 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: grey;
 }
 
 .bodyContainer {
@@ -31,7 +33,6 @@ body {
 }
 
 .title {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-weight: bold;
     font-size: 400% !important;
     text-shadow: 0px 0px 2px gray;
@@ -89,4 +90,21 @@ body {
     50% {
         opacity: 0.6;
     }
+}
+
+.subscribeForm {
+    color: gray;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 40rem;
+}
+
+.subscribedNotice {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: gray;
+    display: none;
+    max-width: 40rem;
 }
