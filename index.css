@@ -60,15 +60,12 @@ body {
     margin-top: 20px;
 }
 
-.SubscribeForm {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    max-width: 40rem;
-    text-align: center;
+.MailChimpSubscribeFormContainer {
+    color: black;
+    margin-top: 16px;
 }
 
-.SubscribedNotice {
-    display: none;
-    max-width: 40rem;
+.MailChimpSubscribeForm {
+    border-radius: 8px;
+    padding: 10px;
 }
