@@ -1,23 +1,36 @@
-html,
-body {
-    height: 100%;
-    width: 100%;
+@media screen and (min-width: 800px) {
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    .Root {
+        height: 100%;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+    }
 }
 
 .Root {
     background-image: radial-gradient(#005aff, #377eff);
     color: white;
     font-family: 'Montserrat', sans-serif;
-    height: 100%;
-    margin: auto;
-    padding: 0;
-    width: 80%;
+}
+
+/* Super small screens */
+@media screen and (max-width: 340px) {
+    .DisposableIfNeededTableCell {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 900px) {
     .Root {
-        margin: 0;
-        padding: 20px;
+        margin: auto;
+        padding: 0px;
         width: 95%;
     }
 
