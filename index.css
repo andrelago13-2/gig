@@ -68,4 +68,5 @@ body {
 .MailChimpSubscribeForm {
     border-radius: 8px;
     padding: 10px;
+    width: 100%;
 }
